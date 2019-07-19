@@ -4,7 +4,7 @@
 
   .intro {
     img {
-      border-radius: 10px;
+      border-radius: 5px;
 
       @media @phone {
         width: 100%;
@@ -88,6 +88,28 @@
       }
 
       .btn {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 5px;
+        width: 110px;
+
+        .custom-font(2rem, bold);
+        .colors(@wild-sand, @btn-bg-color);
+
+        &:hover{
+          .colors(@btn-bg-color, @waterloo);
+        }
+
+        @media @phone {
+          padding: 25px;
+          font-size: 1.8rem;
+          width: 100%;
+
+          &:hover{
+            .colors(@btn-bg-color, @waterloo);
+          }
+        }
       }
 
       @media @phone {
