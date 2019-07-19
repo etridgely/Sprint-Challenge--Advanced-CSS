@@ -202,6 +202,8 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  animation-name: fadeOut;
+  animation-duration: 10s;
 }
 @media (max-width: 500px) {
   .home .intro img {
